@@ -7,7 +7,8 @@ import (
 	"net/http"
 	"strconv"
 	"strings"
-	// "github.com/pluralsight/webservices/cors"
+
+	"star-track.com/gameservice/cors"
 )
 
 const characterPath = "characters"
@@ -71,10 +72,7 @@ func handleCharacter(w http.ResponseWriter, r *http.Request) {
 // SetupRoutes :
 func SetupRoutes(apiBasePath string) {
 	charactersHandler := http.HandlerFunc(handleCharacters)
-	// characterHandler := http.HandlerFunc(handleCharacter)
-	// http.Handle(fmt.Sprintf("%s/%s", apiBasePath, characterPath), cors.Middleware(charactersHandler))
-	// http.Handle(fmt.Sprintf("%s/%s/", apiBasePath, characterPath), cors.Middleware(characterHandler))
-	fmt.Println(fmt.Sprintf("%s/%s", apiBasePath, characterPath))
-	http.Handle(fmt.Sprintf("%s/%s", apiBasePath, characterPath), charactersHandler)
-	// http.Handle(fmt.Sprintf("%s/%s/", apiBasePath, characterPath), nil)
+	characterHandler := http.HandlerFunc(handleCharacter)
+	http.Handle(fmt.Sprintf("%s/%s", apiBasePath, characterPath), cors.Middleware(charactersHandler))
+	http.Handle(fmt.Sprintf("%s/%s/", apiBasePath, characterPath), cors.Middleware(characterHandler))
 }
