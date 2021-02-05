@@ -16,13 +16,13 @@ var characterMap = struct {
 }{m: make(map[int]Character)}
 
 func init() {
-	fmt.Println("loading characters...")
+	fmt.Print("loading characters...")
 	charMap, err := loadCharacterMap()
 	characterMap.m = charMap
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("%d characters loaded...\n", len(characterMap.m))
+	fmt.Printf("%d characters loaded...\n", len(characterMap.m))
 }
 
 func loadCharacterMap() (map[int]Character, error) {

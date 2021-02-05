@@ -2,18 +2,14 @@ package character
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 	"strconv"
-	"strings"
 
-	"star-track.com/star-track-go-api/cors"
+	"github.com/gorilla/mux"
 )
 
-const characterPath = "characters"
-
-func handleCharacters(w http.ResponseWriter, r *http.Request) {
+func HandleCharacters(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodGet:
 		characterList := getCharactersList()
@@ -32,13 +28,13 @@ func handleCharacters(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func handleCharacter(w http.ResponseWriter, r *http.Request) {
-	urlPathSegments := strings.Split(r.URL.Path, fmt.Sprintf("%s/", characterPath))
-	if len(urlPathSegments[1:]) > 1 {
+func HandleCharacter(w http.ResponseWriter, r *http.Request) {
+	params := mux.Vars(r)
+	if params["id"] == "" {
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
-	characterId, err := strconv.Atoi(urlPathSegments[len(urlPathSegments)-1])
+	characterID, err := strconv.Atoi(params["id"])
 	if err != nil {
 		log.Print(err)
 		w.WriteHeader(http.StatusNotFound)
@@ -46,7 +42,7 @@ func handleCharacter(w http.ResponseWriter, r *http.Request) {
 	}
 	switch r.Method {
 	case http.MethodGet:
-		product := getCharacter(characterId)
+		product := getCharacter(characterID)
 		if product == nil {
 			w.WriteHeader(http.StatusNotFound)
 			return
@@ -67,12 +63,4 @@ func handleCharacter(w http.ResponseWriter, r *http.Request) {
 	default:
 		w.WriteHeader(http.StatusMethodNotAllowed)
 	}
-}
-
-// SetupRoutes :
-func SetupRoutes(apiBasePath string) {
-	charactersHandler := http.HandlerFunc(handleCharacters)
-	characterHandler := http.HandlerFunc(handleCharacter)
-	http.Handle(fmt.Sprintf("%s/%s", apiBasePath, characterPath), cors.Middleware(charactersHandler))
-	http.Handle(fmt.Sprintf("%s/%s/", apiBasePath, characterPath), cors.Middleware(characterHandler))
 }

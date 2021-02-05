@@ -1,12 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
-
-	"star-track.com/star-track-go-api/character"
-	"star-track.com/star-track-go-api/ranking"
 )
 
 const basePath = "/api"
@@ -17,8 +15,8 @@ func main() {
 		port = "5000"
 	}
 
-	character.SetupRoutes(basePath)
-	ranking.SetupRoutes(basePath)
+	SetupRoutes(basePath)
+	fmt.Println("\nWebserver is up and running on port 5000, waiting for connections...")
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
 		log.Fatal(err)
