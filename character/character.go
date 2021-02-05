@@ -5,4 +5,5 @@ type Character struct {
 	Name     string `json:"name"`
 	ImageURL string `json:"image_url"`
 	Bio      string `json:"bio"`
+	Pronouns string `json:"pronouns"`
 }
