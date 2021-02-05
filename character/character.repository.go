@@ -67,9 +67,16 @@ func getCharacter(characterId int) *Character {
 
 func getCharactersList() []Character {
 	characterMap.RLock()
+
+	keys := make([]int, 0, len(characterMap.m))
+	for k := range characterMap.m {
+		keys = append(keys, k)
+	}
+	sort.Ints(keys)
+
 	characters := make([]Character, 0, len(characterMap.m))
-	for _, value := range characterMap.m {
-		characters = append(characters, value)
+	for _, key := range keys {
+		characters = append(characters, characterMap.m[key])
 	}
 	characterMap.RUnlock()
 	return characters
