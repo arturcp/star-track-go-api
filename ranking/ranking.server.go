@@ -2,16 +2,11 @@ package ranking
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
-
-	"star-track.com/star-track-go-api/cors"
 )
 
-const rankingPath = "ranking"
-
-func handleRanking(w http.ResponseWriter, r *http.Request) {
+func HandleRanking(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodGet:
 		rankingList := getRankingList()
@@ -28,10 +23,4 @@ func handleRanking(w http.ResponseWriter, r *http.Request) {
 	default:
 		w.WriteHeader(http.StatusMethodNotAllowed)
 	}
-}
-
-// SetupRoutes :
-func SetupRoutes(apiBasePath string) {
-	rankingHandler := http.HandlerFunc(handleRanking)
-	http.Handle(fmt.Sprintf("%s/%s", apiBasePath, rankingPath), cors.Middleware(rankingHandler))
 }
