@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "player_name": "Joran",
+    "points": 8694,
+    "character": "Carmen"
+  },
+  {
+    "id": 2,
+    "player_name": "Zarina",
+    "points": 8101,
+    "character": "Sam"
+  },
+  {
+    "id": 3,
+    "player_name": "Padma",
+    "points": 7609,
+    "character": "Diego"
+  },
+  {
+    "id": 4,
+    "player_name": "Eugênio",
+    "points": 7608,
+    "character": "Diego"
+  },
+  {
+    "id": 5,
+    "player_name": "Emma",
+    "points": 6900,
+    "character": "Diego"
+  },
+  {
+    "id": 6,
+    "player_name": "Carmen",
+    "points": 3008,
+    "character": "Carmen"
+  },
+  {
+    "id": 7,
+    "player_name": "Tarcísio",
+    "points": 2008,
+    "character": "Carmen"
+  },
+  {
+    "id": 8,
+    "player_name": "Rosana",
+    "points": 1523,
+    "character": "Sam"
+  },
+  {
+    "id": 9,
+    "player_name": "Rock Balboa",
+    "points": 1500,
+    "character": "Carmen"
+  },
+  {
+    "id": 10,
+    "player_name": "Neil Degrasse Tyson",
+    "points": 20,
+    "character": "Diego"
+  }
+]

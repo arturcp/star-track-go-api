@@ -26,7 +26,7 @@ func init() {
 }
 
 func loadCharacterMap() (map[int]Character, error) {
-	fileName := "characters.json"
+	fileName := "data/characters.json"
 	_, err := os.Stat(fileName)
 	if os.IsNotExist(err) {
 		return nil, fmt.Errorf("file [%s] does not exist", fileName)
