@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"star-track.com/gameservice/character"
+	"star-track.com/star-track-go-api/character"
 )
 
 const basePath = "/api"

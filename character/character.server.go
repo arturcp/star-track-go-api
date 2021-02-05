@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"star-track.com/gameservice/cors"
+	"star-track.com/star-track-go-api/cors"
 )
 
 const characterPath = "characters"
