@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/gorilla/mux"
 	"net/http"
 
 	"star-track.com/star-track-go-api/character"
@@ -14,11 +15,24 @@ const rankingPath = "ranking"
 
 // SetupRoutes configures the routes for the API.
 func SetupRoutes(apiBasePath string) {
-	rankingHandler := http.HandlerFunc(ranking.HandleRanking)
-	http.Handle(fmt.Sprintf("%s/%s", apiBasePath, rankingPath), cors.Middleware(rankingHandler))
+	router := mux.NewRouter()
+	router.Use(cors.Middleware)
+	apiRouter := router.PathPrefix("/api").
+		Methods("GET", "POST", "PUT", "DELETE", "OPTIONS").
+		Subrouter()
 
-	charactersHandler := http.HandlerFunc(character.HandleCharacters)
-	characterHandler := http.HandlerFunc(character.HandleCharacter)
-	http.Handle(fmt.Sprintf("%s/%s", apiBasePath, charactersPath), cors.Middleware(charactersHandler))
-	http.Handle(fmt.Sprintf("%s/%s/", apiBasePath, charactersPath), cors.Middleware(characterHandler))
+	apiRouter.HandleFunc("/characters/{id}", character.HandleCharacter)
+	apiRouter.HandleFunc("/characters", character.HandleCharacters)
+
+	apiRouter.HandleFunc("/ranking", ranking.HandleRanking)
+
+	http.Handle("/", router)
+
+	fmt.Print("Available routes:\n\n")
+	router.Walk(func(route *mux.Route, router *mux.Router, ancestors []*mux.Route) error {
+		tpl, _ := route.GetPathTemplate()
+		met, _ := route.GetMethods()
+		fmt.Println(tpl, "", met, "")
+		return nil
+	})
 }

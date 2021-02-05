@@ -16,13 +16,13 @@ var rankingMap = struct {
 }{m: make(map[int]Ranking)}
 
 func init() {
-	fmt.Println("loading ranking...")
+	fmt.Print("loading ranking...")
 	charMap, err := loadRankingMap()
 	rankingMap.m = charMap
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("%d ranking loaded...\n", len(rankingMap.m))
+	fmt.Printf("%d ranking loaded...\n", len(rankingMap.m))
 }
 
 func loadRankingMap() (map[int]Ranking, error) {

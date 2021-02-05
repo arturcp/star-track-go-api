@@ -2,11 +2,11 @@ package character
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 	"strconv"
-	"strings"
+
+	"github.com/gorilla/mux"
 )
 
 func HandleCharacters(w http.ResponseWriter, r *http.Request) {
@@ -29,12 +29,12 @@ func HandleCharacters(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleCharacter(w http.ResponseWriter, r *http.Request) {
-	urlPathSegments := strings.Split(r.URL.Path, fmt.Sprintf("characters/"))
-	if len(urlPathSegments[1:]) > 1 {
+	params := mux.Vars(r)
+	if params["id"] == "" {
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
-	characterID, err := strconv.Atoi(urlPathSegments[len(urlPathSegments)-1])
+	characterID, err := strconv.Atoi(params["id"])
 	if err != nil {
 		log.Print(err)
 		w.WriteHeader(http.StatusNotFound)
