@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/gorilla/mux"
 	"net/http"
+
+	"github.com/gorilla/mux"
 
 	"star-track.com/star-track-go-api/character"
 	"star-track.com/star-track-go-api/cors"
+	"star-track.com/star-track-go-api/dialog"
 	"star-track.com/star-track-go-api/ranking"
 )
 
@@ -25,6 +27,8 @@ func SetupRoutes(apiBasePath string) {
 	apiRouter.HandleFunc("/characters", character.HandleCharacters)
 
 	apiRouter.HandleFunc("/ranking", ranking.HandleRanking)
+
+	apiRouter.HandleFunc("/dialogs/{id}", dialog.HandleDialogs)
 
 	http.Handle("/", router)
 
