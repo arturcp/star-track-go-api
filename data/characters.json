@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "type": "PC",
     "name": "Carmen",
     "pronouns": "ela/dela",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4zaRNgDkFJrQwoUUPBcx-SSpExD3lAcf8lQ&usqp=CAU",
@@ -16,6 +17,7 @@
   },
   {
     "id": 2,
+    "type": "PC",
     "name": "Sam",
     "pronouns": "elu/delu",
     "image_url": "https://2.bp.blogspot.com/-upJTHRBL9kI/WIEZ32znUoI/AAAAAAAAhgY/4DUXlOC7K0UNZbvATzTyrqgGwrbDv6tLgCK4B/s1600/Dingbot-1.jpg",
@@ -29,6 +31,7 @@
   },
   {
     "id": 3,
+    "type": "PC",
     "name": "Diego",
     "pronouns": "ele/dele",
     "image_url": "https://i.pinimg.com/originals/c0/80/0d/c0800d46682cde42cfae87cd750d3207.jpg",
@@ -40,5 +43,14 @@
       "Officia voluptate velit exercitation officia proident dolore aliqua pariatur. Adipisicing nulla duis ex fugiat irure aliqua qui. In Lorem esse tempor commodo et do anim incididunt sint sint ipsum esse. Eiusmod culpa cillum qui ad. Adipisicing deserunt exercitation nisi magna consectetur amet tempor dolore aute deserunt. Anim enim fugiat sint proident nisi minim esse eu qui ex officia nulla commodo. Ex et elit consectetur sunt anim id.",
       "Veniam quis duis veniam sit consectetur ea irure dolor deserunt laborum ea velit exercitation id. Est eu minim duis est laboris reprehenderit amet est Lorem ex. Mollit exercitation labore duis ullamco aliqua cupidatat laborum magna in. Nostrud non aute dolore id proident."
     ]
+  },
+  {
+    "id": 4,
+    "type": "NPC",
+    "name": "Dr Ken",
+    "pronouns": "",
+    "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/10e81e35578985.5606250d36b9e.jpg",
+    "bio": "",
+    "history": []
   }
 ]

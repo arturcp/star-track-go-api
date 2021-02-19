@@ -59,13 +59,7 @@ func getCharacter(characterId int) *Character {
 	return nil
 }
 
-// func removeCharacter(characterId int) {
-// 	characterMap.Lock()
-// 	defer characterMap.Unlock()
-// 	delete(characterMap.m, characterId)
-// }
-
-func getCharactersList() []Character {
+func getCharactersList(characterType string) []Character {
 	characterMap.RLock()
 
 	keys := make([]int, 0, len(characterMap.m))
@@ -74,9 +68,11 @@ func getCharactersList() []Character {
 	}
 	sort.Ints(keys)
 
-	characters := make([]Character, 0, len(characterMap.m))
+	characters := []Character{}
 	for _, key := range keys {
-		characters = append(characters, characterMap.m[key])
+		if characterType == "" || characterType == characterMap.m[key].Type {
+			characters = append(characters, characterMap.m[key])
+		}
 	}
 	characterMap.RUnlock()
 	return characters

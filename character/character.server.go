@@ -12,7 +12,12 @@ import (
 func HandleCharacters(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodGet:
-		characterList := getCharactersList()
+		queryParams := r.URL.Query()
+		characterType := ""
+		if len(queryParams["type"]) > 0 {
+			characterType = queryParams["type"][0]
+		}
+		characterList := getCharactersList(characterType)
 		j, err := json.Marshal(characterList)
 		if err != nil {
 			log.Fatal(err)
