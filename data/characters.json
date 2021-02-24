@@ -6,6 +6,7 @@
     "pronouns": "ela/dela",
     "image_url": "https://res.cloudinary.com/ongmungazi/image/upload/v1614191080/star-track/carmen.png",
     "bio": "Curiosa, leonina (isso já diz tudo) e não gosta de chá de camomila. Seu sonho é se tornar uma espiã mundialmente famosa.",
+    "main_color": "#BE201F",
     "history": [
       "Minim Lorem aliquip aliqua do id irure est irure nulla in ea fugiat. Ut amet elit proident do sit magna consectetur est incididunt. Laborum nostrud sit id adipisicing esse culpa ut. Elit cillum irure dolore dolor labore ullamco dolor do non.",
       "Duis in magna quis in exercitation eu elit fugiat laborum enim. Veniam ullamco ipsum cupidatat culpa consequat officia laboris ut. Commodo sit magna eiusmod consectetur ea tempor. Aute do culpa Lorem consectetur id velit qui cupidatat consequat voluptate.",
@@ -22,6 +23,7 @@
     "pronouns": "elu/delu",
     "image_url": "https://res.cloudinary.com/ongmungazi/image/upload/v1614191080/star-track/sam.png",
     "bio": "Et, telefone, minha casa, mas não necessariamente nessa mesma ordem.",
+    "main_color": "#6A6A69",
     "history": [
       "Magna tempor Lorem commodo commodo excepteur aute enim in. Consequat ipsum nisi laborum velit id aute irure eiusmod tempor exercitation deserunt qui cupidatat excepteur. Voluptate non velit sint mollit anim incididunt exercitation ipsum. Culpa ad nisi id cillum sit Lorem cillum sint.",
       "Duis in magna quis in exercitation eu elit fugiat laborum enim. Veniam ullamco ipsum cupidatat culpa consequat officia laboris ut. Commodo sit magna eiusmod consectetur ea tempor. Aute do culpa Lorem consectetur id velit qui cupidatat consequat voluptate tempor aute. Commodo labore laboris irure Lorem aute.",
@@ -36,6 +38,7 @@
     "pronouns": "ele/dele",
     "image_url": "https://res.cloudinary.com/ongmungazi/image/upload/v1614191080/star-track/diego.png",
     "bio": "Vira a esquina com toda alegria, festejando.",
+    "main_color": "#C86F28",
     "history": [
       "Eiusmod et eiusmod velit magna amet eu minim sit laboris dolor. Deserunt magna anim cupidatat consectetur. Est sint irure cillum in magna veniam est ut nisi magna officia anim. Aute sint non deserunt eiusmod eiusmod eiusmod non voluptate. Aliqua ullamco tempor proident magna pariatur non fugiat eiusmod.",
       "Eu esse exercitation velit est pariatur. Magna incididunt sit proident aute ipsum sit anim exercitation et laborum adipisicing. Aliqua ipsum eiusmod reprehenderit do qui et sit ullamco tempor. Est id laboris aliqua qui ea magna. Voluptate ullamco aute est do esse in veniam do excepteur. Anim sint commodo minim aliquip proident cupidatat.",
@@ -51,6 +54,7 @@
     "pronouns": "",
     "image_url": "https://res.cloudinary.com/ongmungazi/image/upload/v1614191260/star-track/doctor.png",
     "bio": "",
+    "main_color": "#8C311E",
     "history": []
   }
 ]
