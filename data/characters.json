@@ -4,7 +4,7 @@
     "type": "PC",
     "name": "Carmen",
     "pronouns": "ela/dela",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4zaRNgDkFJrQwoUUPBcx-SSpExD3lAcf8lQ&usqp=CAU",
+    "image_url": "https://res.cloudinary.com/ongmungazi/image/upload/v1614191080/star-track/carmen.png",
     "bio": "Curiosa, leonina (isso já diz tudo) e não gosta de chá de camomila. Seu sonho é se tornar uma espiã mundialmente famosa.",
     "history": [
       "Minim Lorem aliquip aliqua do id irure est irure nulla in ea fugiat. Ut amet elit proident do sit magna consectetur est incididunt. Laborum nostrud sit id adipisicing esse culpa ut. Elit cillum irure dolore dolor labore ullamco dolor do non.",
@@ -20,7 +20,7 @@
     "type": "PC",
     "name": "Sam",
     "pronouns": "elu/delu",
-    "image_url": "https://2.bp.blogspot.com/-upJTHRBL9kI/WIEZ32znUoI/AAAAAAAAhgY/4DUXlOC7K0UNZbvATzTyrqgGwrbDv6tLgCK4B/s1600/Dingbot-1.jpg",
+    "image_url": "https://res.cloudinary.com/ongmungazi/image/upload/v1614191080/star-track/sam.png",
     "bio": "Et, telefone, minha casa, mas não necessariamente nessa mesma ordem.",
     "history": [
       "Magna tempor Lorem commodo commodo excepteur aute enim in. Consequat ipsum nisi laborum velit id aute irure eiusmod tempor exercitation deserunt qui cupidatat excepteur. Voluptate non velit sint mollit anim incididunt exercitation ipsum. Culpa ad nisi id cillum sit Lorem cillum sint.",
@@ -34,7 +34,7 @@
     "type": "PC",
     "name": "Diego",
     "pronouns": "ele/dele",
-    "image_url": "https://i.pinimg.com/originals/c0/80/0d/c0800d46682cde42cfae87cd750d3207.jpg",
+    "image_url": "https://res.cloudinary.com/ongmungazi/image/upload/v1614191080/star-track/diego.png",
     "bio": "Vira a esquina com toda alegria, festejando.",
     "history": [
       "Eiusmod et eiusmod velit magna amet eu minim sit laboris dolor. Deserunt magna anim cupidatat consectetur. Est sint irure cillum in magna veniam est ut nisi magna officia anim. Aute sint non deserunt eiusmod eiusmod eiusmod non voluptate. Aliqua ullamco tempor proident magna pariatur non fugiat eiusmod. Officia commodo fugiat minim ullamco sunt occaecat quis deserunt dolor. Cillum consequat exercitation cillum nisi dolore anim.",
@@ -49,7 +49,7 @@
     "type": "NPC",
     "name": "Dr Ken",
     "pronouns": "",
-    "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/10e81e35578985.5606250d36b9e.jpg",
+    "image_url": "https://res.cloudinary.com/ongmungazi/image/upload/v1614191260/star-track/doctor.png",
     "bio": "",
     "history": []
   }
