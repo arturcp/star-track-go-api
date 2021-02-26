@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "step_id": 1,
+    "image_url": "",
+    "npc_id": 4,
+    "question": "In what moon phase is the lunar eclipse?",
+    "options": [
+      "Full moon",
+      "New moon",
+      "Moon-ha"
+    ],
+    "answer": 2,
+    "points": 5
+  },
+  {
+    "id": 2,
+    "step_id": 2,
+    "image_url": "",
+    "npc_id": 4,
+    "question": "Proident eu in aliquip voluptate?",
+    "options": [
+      "Laboris quis velit commodo Lorem aliquip laboris fugiat ad.",
+      "Officia magna est excepteur nulla nisi exercitation anim velit eu.",
+      "Velit officia laborum ut minim dolore dolor tempor."
+    ],
+    "answer": 0,
+    "points": 3
+  }
+]
