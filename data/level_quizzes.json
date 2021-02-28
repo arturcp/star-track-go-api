@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "level_id": 1,
+    "image_url": "",
+    "npc_id": 4,
+    "options": [
+      "elliptical",
+      "spiral",
+      "irregular"
+    ],
+    "answer": 2,
+    "points": 5
+  }
+]

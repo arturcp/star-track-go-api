@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Inner Solar System",
+    "stages": [
+      {
+        "id": 1,
+        "name": "Earth",
+        "image_url": "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/as17-148-22727_lrg_0.jpg",
+        "galaxy_type": "spiral"
+      },
+      {
+        "id": 2,
+        "name": "Moon",
+        "image_url": "https://images.theconversation.com/files/152548/original/image-20170112-16521-5iwg58.jpg",
+        "galaxy_type": "elliptical"
+      }
+    ]
+  }
+]
