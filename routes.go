@@ -9,6 +9,7 @@ import (
 	"star-track.com/star-track-go-api/character"
 	"star-track.com/star-track-go-api/cors"
 	"star-track.com/star-track-go-api/dialog"
+	"star-track.com/star-track-go-api/level"
 	"star-track.com/star-track-go-api/ranking"
 )
 
@@ -29,6 +30,8 @@ func SetupRoutes(apiBasePath string) {
 	apiRouter.HandleFunc("/ranking", ranking.HandleRanking)
 
 	apiRouter.HandleFunc("/dialogs/{id}", dialog.HandleDialogs)
+
+	apiRouter.HandleFunc("/levels", level.HandleLevels)
 
 	http.Handle("/", router)
 
