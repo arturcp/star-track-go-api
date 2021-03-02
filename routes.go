@@ -29,7 +29,7 @@ func SetupRoutes(apiBasePath string) {
 
 	apiRouter.HandleFunc("/ranking", ranking.HandleRanking)
 
-	apiRouter.HandleFunc("/dialogs/{id}", dialog.HandleDialogs)
+	apiRouter.HandleFunc("/dialogs/{levelID}/{stageID}/{id}", dialog.HandleDialogs)
 
 	apiRouter.HandleFunc("/levels", level.HandleLevels)
 
