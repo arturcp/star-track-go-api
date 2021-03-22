@@ -1,39 +1,40 @@
 {
   "1": [
     {
-      "character_type":  "PC",
-      "npc_id": null,
-      "paragraphs": [
-        "Do culpa qui anim consectetur esse sunt sit voluptate commodo velit. Deserunt cillum do consectetur fugiat do. Consectetur do veniam et est. Pariatur laboris cupidatat velit aliquip dolore.",
-        "Labore in nostrud fugiat magna in mollit et consectetur. Minim deserunt labore deserunt id cillum. Officia est tempor aliquip cillum tempor aliqua qui eu ullamco anim. Amet do fugiat do laboris ullamco. Culpa consectetur adipisicing reprehenderit proident et ex magna consectetur dolor laborum dolor ea elit dolore.",
-        "Dolore voluptate labore irure exercitation culpa incididunt laboris commodo cillum sit ut. Sint aute ipsum officia eiusmod ex anim. Enim amet non ullamco eu ut nostrud esse. Cupidatat non aliqua sint in Lorem id nostrud do sunt. Duis voluptate Lorem aliqua consectetur amet aliquip.",
-        "Eu dolor proident voluptate Lorem consectetur id. Nisi aliqua ut Lorem qui nulla ullamco excepteur reprehenderit nulla quis nostrud enim. Irure nulla voluptate laboris duis cillum excepteur eu quis laboris quis consectetur ipsum."
-      ]
-    },
-    {
       "character_type":  "NPC",
       "npc_id": 4,
       "paragraphs": [
-        "Esse in commodo ut cupidatat sunt exercitation. Ullamco sunt proident culpa pariatur nisi id duis laborum commodo qui officia. Sunt voluptate est labore consequat. Consequat do sint labore nisi mollit veniam laborum minim. Quis sit ea irure eu eu ut labore consectetur fugiat.",
-        "Sunt commodo in consequat tempor minim do proident elit duis officia veniam fugiat esse sint. Duis ad elit non laborum est incididunt. Elit est aliqua laboris et mollit veniam minim voluptate.",
-        "Officia eiusmod elit velit culpa qui officia sunt. Cillum nisi laborum sint aliquip dolor id eu do reprehenderit incididunt culpa. Mollit ea labore excepteur ullamco. Ut nostrud cillum culpa do et est culpa pariatur. Eu incididunt adipisicing id ullamco excepteur qui non tempor."
+        "PC! I must leave for the Intergalactic Congress Reunion today. Have you seen my briefcase with the categorized galaxies?"
       ]
     },
     {
       "character_type":  "PC",
       "npc_id": null,
       "paragraphs": [
-        "Laboris eu enim aliqua laborum exercitation aliqua non. Aliqua aute occaecat nisi consequat proident deserunt tempor occaecat. Nulla cillum officia aliquip cupidatat sint magna ipsum ad. Laborum Lorem officia sit esse sunt excepteur magna quis. Et sit laborum id voluptate. Laborum nostrud esse excepteur est occaecat ex quis quis.",
-        "Commodo sint dolore veniam do tempor sint id magna. Id tempor ea occaecat labore cupidatat sunt laboris. Esse proident aliqua magna in ea aute ex minim. Nulla proident non est laborum veniam velit aute do ipsum. Ad tempor sunt dolore et sit aute est ut anim eiusmod officia. Mollit velit voluptate amet ut mollit proident eiusmod commodo ea est.",
-        "Reprehenderit do ea et ad sunt enim. Ex cillum labore nulla excepteur. Dolore consequat cupidatat laborum nulla Lorem esse. Mollit ullamco tempor ullamco mollit. Qui enim reprehenderit commodo pariatur consequat veniam velit voluptate ex deserunt dolore enim velit. Culpa esse anim ut est occaecat. Nostrud mollit consectetur officia id eiusmod.",
-        "Mollit eiusmod fugiat ut elit fugiat commodo tempor Lorem. Voluptate non irure irure non in enim deserunt ea et. Duis incididunt magna officia aliqua dolor. Eiusmod magna veniam ut velit. Laboris eu elit excepteur ea quis ullamco. Deserunt Lorem consequat nisi in enim incididunt exercitation. Exercitation do labore aliqua cupidatat."
+        "It's right here, Professor! You have finally classified them all!"
       ]
     },
     {
       "character_type":  "NPC",
       "npc_id": 4,
       "paragraphs": [
-        "Non cupidatat est consectetur ex voluptate. Sunt quis proident ullamco do excepteur ad dolor reprehenderit labore qui. Consequat sit sit veniam reprehenderit commodo ad voluptate excepteur minim. Veniam ex ad in reprehenderit sit voluptate amet nulla enim incididunt consectetur id amet. Nostrud in amet commodo elit incididunt dolore minim sit velit."
+        "That's right! You know, these are very important. Ever since the formation of the Intergalactic Congress there has been a great amount of conflicts, and these should resolve them all!",
+        "Each galaxy is represented by their type, and every galaxy type has the right to one vote when it comes to deciding the fate of the universe. But there has been some discussion regarding the number of votes each galaxy type should receive!",
+        "So, I was put in charge to classify every single galaxy, so the Congress can determine how many votes each type of galaxy should get, bringing peace to the whole universe!"
+      ]
+    },
+    {
+      "character_type":  "PC",
+      "npc_id": null,
+      "paragraphs": [
+        "That must've been a lot of work!"
+      ]
+    },
+    {
+      "character_type":  "NPC",
+      "npc_id": 4,
+      "paragraphs": [
+        "It sure was. I hope I don't lose them, it's my only copy!"
       ]
     }
   ]
